@@ -6,6 +6,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
+        <Saludo name= 'Sofia' apellido='Juarez' />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
@@ -22,4 +23,9 @@ function App() {
   );
 }
 
+function Saludo(props){
+  return <h1>Welcome, {props.name} {props.apellido}</h1>
+}
+
 export default App;
+
